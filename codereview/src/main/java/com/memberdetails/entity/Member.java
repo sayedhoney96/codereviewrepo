@@ -14,12 +14,16 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
+
 @Data
 @Entity
 @Table(name="member")
 public class Member {
+	
+	
+	public Member() {
+		
+	}
 	
 		public int getId() {
 		return id;
