@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.stereotype.Component;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonFormat.Shape;
 
@@ -18,6 +20,7 @@ import lombok.Setter;
 @Data
 @Entity
 @Table(name="member")
+@Component
 public class Member {
 	
 	
