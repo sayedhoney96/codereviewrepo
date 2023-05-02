@@ -24,17 +24,11 @@ public class MemberController {
 	@Autowired
 	private MemberService memberservice;
 
-	public MemberController(MemberService memberservice) {
-		super();
-		this.memberservice = memberservice;
-	}
-
-	
-	
-	
-	
 	//build creating member rest api
 	
+	
+	
+
 	@PostMapping("/members")
 	public ResponseEntity<Member> savemember(@RequestBody Member member){
 		return new ResponseEntity<Member>(memberservice.savemember(member), HttpStatus.CREATED);
